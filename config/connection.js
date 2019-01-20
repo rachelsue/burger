@@ -5,8 +5,8 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 8889,
   user: "root",
-  password: "",
-  database: "cat_db"
+  password: "root",
+  database: "burger_db"
 });
 
 // Make connection.
@@ -20,3 +20,5 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
+//complete
