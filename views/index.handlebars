@@ -1,10 +1,13 @@
+
 <h1>Burgers!</h1>
 
 <h2>To Be Devoured!</h2>
 
 <ul>
   {{#each burgers}}
-    {{name}} <button class="change status">Devour!</button>  
+    {{#unless devoured}}
+     {{> burgers/new_burger devoured=true}}
+    {{/unless}}
   {{/each}}
 </ul>
 
@@ -12,10 +15,12 @@
 
 <ul>
   {{#each burgers}}
+    {{#if devoured}}
     {{name}}
+      {{> burgers/devoured_burgers devoured=false}}
+    {{/if}}
   {{/each}}
 </ul>
-
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -25,21 +30,10 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Devour?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
   <button type="submit">Add Burger</button>
 </form>
 
 
-{{!-- <form action="/" method="POST">
-	<textarea type="text" name="name"></textarea>
-
-	<button type="submit">Submit</button>
-</form> --}}
-
-
-
+<form class="reset-form">
+  <button type="submit">Reset All</button>
+</form>
