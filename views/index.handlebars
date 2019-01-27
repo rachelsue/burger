@@ -16,8 +16,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-    {{name}}
-      {{> burgers/devoured_burgers devoured=false}}
+      {{> burgers/devoured_burgers devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
