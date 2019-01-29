@@ -15,23 +15,6 @@ button {
     font-family: 'Press Start 2P', cursive;
 }
 
-.tobedev {
-flex-direction: column;
-}
-
-.dev {
-    /* background-color: yellow; */
-    /* display:flex; */
-    flex-direction: column;
-    /* float: right; */
-    /* justify-content: center; */
-    
-}
-
-.add {
-    flex-direction: column; 
-}
-
 ul {
     list-style: none;
 }
