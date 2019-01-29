@@ -1,0 +1,37 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("../img/burgerGiF.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ate {
+    color: red;
+}
+
+button {
+    color: green;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tobedev {
+flex-direction: column;
+}
+
+.dev {
+    /* background-color: yellow; */
+    /* display:flex; */
+    flex-direction: column;
+    /* float: right; */
+    /* justify-content: center; */
+    
+}
+
+.add {
+    flex-direction: column; 
+}
+
+ul {
+    list-style: none;
+}
